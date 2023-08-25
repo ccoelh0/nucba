@@ -1,0 +1,195 @@
+/* selectores */
+
+#selectorId {
+  color: #8c54fb;
+
+}
+
+.selectorClase {
+  color: #e11d48;
+
+}
+
+h4 {
+  color: #2f9f1b;
+}
+
+div h4 {
+  color: blue;
+}
+
+/* div > h5 {
+  color: yellow;
+} */
+
+/*Adyacente*/
+/* .container-div h6 + h6 {
+  color: red;
+} */
+
+/* .div-combinar-hermanos h5 ~ h6 {
+  color: green;
+} */
+
+.caja {
+  width: 200px;
+  height: 100px;
+  /* background-color: red; */
+}
+
+.caja-mediana {
+  width: 200px;
+  height: 200px;
+  background-color: #e11d48;
+  font-size: 16px;
+}
+
+.caja-grande {
+}
+
+/* unidades relativas */
+
+.em {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 2rem;
+}
+
+.padre-porcentaje {
+  width: 100px;
+}
+
+.porcentaje {
+  width: 50%;
+  background-color: #8c54fb;
+}
+
+.vh {
+  height: 10vh;
+  background-color: #8c54fb;
+}
+
+.vw {
+  width: 20vw;
+  background-color: #8c54fb;
+}
+
+/* **************************  */
+
+.bg-color {
+  background-color: red;
+}
+
+.bg-img {
+  background-image: url('./img/bg-pattern.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-repeat {
+  background-image: url('./img/bg-repeat.png');
+  background-repeat: repeat-y;
+}
+
+.bg-attach {
+  background-image: url('./img/bg-pattern.jpg');
+  background-attachment: fixed;
+}
+
+.bg-position {
+}
+
+.bg-size {
+}
+
+.color p {
+  color: blue;
+}
+
+/* Box shadow */
+.caja-shadow{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.offsetXY {
+  /* box-shadow: [horizontal-offset] [vertical-offset];  */
+  box-shadow: 10px -10px;
+}
+
+.blurRadius {
+  box-shadow: 10px 10px 5px;
+}
+
+.spreadRadius {
+  box-shadow: 10px 10px 5px 5px;
+}
+
+.color {
+  box-shadow: 10px 10px 5px 5px yellow;
+}
+
+.inset {
+  box-shadow: inset 10px 10px 5px 5px yellow;
+
+}
+
+/* Tipografias */
+
+.font-fa p {
+  font-family: 'Indie Flower';
+}
+
+.font-we p {
+  font-weight: bold;
+}
+
+.font-style p {
+  font-style: italic;
+}
+
+.font-size p {
+  font-size: 2rem;
+}
+
+.letter-spacing p {
+  letter-spacing: 10px;
+}
+
+.word-spacing p {
+  word-spacing: 10px;
+}
+
+.line-height p {
+  line-height: 55px;
+}
+
+.text-align p {
+  text-align: center;
+}
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+/* Listas */
+
+.list-style {
+  list-style-type: none;  
+}
+
+.list-position {
+  list-style-position: outside;
+}
+
+.list-img {
+  list-style-image: url("./img/messi-list-img.jpg");
+  list-style-position: inside;
+}
