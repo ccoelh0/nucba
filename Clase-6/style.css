@@ -1,0 +1,124 @@
+/* Estilos de la clase */
+
+/* overflow */
+.overflow-box {
+  width: 100px;
+  height: 100px;
+  background-color: var(--rose);
+  border-radius: 1rem;
+}
+
+.visible {
+  overflow: visible;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.auto {
+  overflow: auto;
+}
+
+/* Padding */
+.padding {
+  width: 100px;
+  background-color: red;
+  padding: 10px 5px 20px 15px;
+}
+
+/* Border  */
+.border {
+  border: 5px solid red;
+  margin-bottom: 30px;
+}
+
+.dashed {
+  border: 5px dashed red;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.dotted {
+  border: 5px dotted red;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.double {
+  border: 5px double red;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.radius {
+  padding: 10px;
+  background-color: red;
+  border-radius: 8px;
+}
+
+/* margin */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box:nth-child(2) {
+  background-color: blue;
+}
+
+.margin {
+  margin: 10px 5px 20px 15px;
+}
+
+/* Para mostrar cuanto ocupa un p por defecto */
+.caja-ej {
+  max-width: 100%;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Para explicar el box sizing */
+.caja-ej2 {
+}
+
+/* Explicar Inline / Block */
+.inline {
+  border: 1px solid red;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+/* positiions */
+.relative {
+  position: relative;
+  left: 500px
+}
+
+.absolute-container {
+  position: relative;
+  height: 100px;
+}
+
+.absolute {
+  position: absolute;
+  left: 700px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  /* Mala practica */
+  background-color: rgb(38, 183, 38) !important;
+
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
