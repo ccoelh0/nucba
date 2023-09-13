@@ -38,7 +38,8 @@ header {
     align-items: center;
     height: 65px;
     padding: 0px 30px;
-    background: var(--secondary);
+    background: linear-gradient(to bottom, #121e3c, var(--background));
+
 
     /* TODO: Hacer scrolleable */
     position: fixed;
@@ -118,7 +119,12 @@ main {
     font-size: 48px;
     width: 80%;
     font-weight: 800;
-    color: var(--text-white);
+    /* color: var(--text-white); */
+
+    background: linear-gradient(to top, #30cfd0, #c43ad6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 .hero-info p {
