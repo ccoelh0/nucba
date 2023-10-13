@@ -1,0 +1,148 @@
+.container {
+  background-color: #282828;
+  padding: 16px;
+  border-radius: 16px;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.item {
+  background-color: #ff005c;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.grid-column {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  gap: 16px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-rows: 250px 80px;
+  grid-template-columns: 100px 300px;
+}
+
+.grid-fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.grid-repeat {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 16px;
+}
+
+.grid-areas {
+  display: grid;
+  gap: 16px;
+  grid-template-areas: 
+  'nav header header'
+  'nav mycontent sidebar'
+  'nav footer footer';
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #ff005c;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #0c1c95;
+  border-radius: 8px;
+  height: 50px;
+
+}
+
+.content {
+  grid-area: mycontent;
+  background-color: #67d98b;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #6e938e;
+  border-radius: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #e69214;
+  border-radius: 8px;
+}
+
+.justify-align-items {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 16px;
+
+  /* justify-items: center; */
+  /* align-items: center; */
+
+  place-items: start center;
+}
+
+/* Para mostrar mejor el ejemplo, agrandemos el contenedor */
+.justify-align-content {
+
+  width: 600px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 16px;
+
+  /* justify-content: space-around;
+  align-content: center; */
+
+
+  place-content: center space-around;
+}
+
+.grid-auto {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 150px;
+  gap: 16px;
+}
+
+.grid-start-end {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  gap: 16px;
+}
+
+.hijo:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.hijo:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.item-atajo:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+.item-atajo:nth-child(2) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
